@@ -10,6 +10,7 @@ namespace CorrespondenceSystem.MappingClasses
             Id(a => a.idTipoUsuario);
             Map(a => a.descripcion);
             wqerqe
+                asdfsdfg
         }
     }
 }
