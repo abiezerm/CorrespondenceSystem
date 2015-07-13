@@ -9,7 +9,7 @@ namespace CorrespondenceSystem.MappingClasses
         {
             Id(a => a.idTipoUsuario);
             Map(a => a.descripcion);
-            
+            dfgdf
         }
     }
 }
