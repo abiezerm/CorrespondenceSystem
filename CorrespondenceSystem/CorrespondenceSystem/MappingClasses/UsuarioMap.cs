@@ -15,6 +15,8 @@ namespace CorrespondenceSystem.MappingClasses
             Map(a => a.fechaModificacion);
             Map(a => a.usuarioCreacion).Not.Nullable();
             Map(a => a.usuarioModificacion);
+            HasMany(a => a.Movimientos)
+                .KeyColumn("idUsuario");
         }
     }
 }

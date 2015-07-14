@@ -9,12 +9,14 @@ namespace CorrespondenceSystem.MappingClasses
         {
             Id(a => a.idDocumento);
             Map(a => a.codigo).Not.Nullable();
-            Map(a => a.fechaCreacion).Not.Nullable();
+            Map(a => a.fechaCreacionUsuario).Not.Nullable();
             Map(a => a.fechaRegistroUsuario).Not.Nullable();
             Map(a => a.asunto).Not.Nullable();
             References(a => a.departamento).Column("idDepartamento").Not.Nullable();
-            References(a => a.usuario, "usuarioCreacion").Column("idUsuario").Not.Nullable();
-            References(a => a.usuario, "usuarioModificacion").Column("idUsuario");
+            Map(a => a.fechaCreacion).Not.Nullable();
+            Map(a => a.fechaModificacion);
+            Map(a => a.usuarioCreacion).Not.Nullable();
+            Map(a => a.usuarioModificacion);
 
         }
     }

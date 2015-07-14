@@ -142,6 +142,7 @@
     <Compile Include="DomainClasses\TipoMovimiento.cs" />
     <Compile Include="DomainClasses\TipoUsuario.cs" />
     <Compile Include="DomainClasses\Usuario.cs" />
+    <Compile Include="DomainClasses\UsuarioMovimiento.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -153,6 +154,7 @@
     <Compile Include="MappingClasses\TipoMovimientoMap.cs" />
     <Compile Include="MappingClasses\TipoUsuarioMap.cs" />
     <Compile Include="MappingClasses\UsuarioMap.cs" />
+    <Compile Include="MappingClasses\UsuarioMovimientoMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -12,12 +12,12 @@ namespace CorrespondenceSystem.DomainClasses
         public virtual Departamento departamento { get; set; }
         public virtual DateTime fechaCreacion { get; set; }
         public virtual DateTime fechaModificacion { get; set; }
-        public virtual Usuario usuario { get; set; }
+        public virtual int usuarioCreacion { get; set; }
+        public virtual int usuarioModificacion { get; set; }
 
         public Documento()
         {
             departamento = new Departamento();
-            usuario = new Usuario();
         }
     }
 }
