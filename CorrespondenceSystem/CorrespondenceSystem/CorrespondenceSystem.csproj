@@ -137,6 +137,7 @@
     <Compile Include="DomainClasses\Departamento.cs" />
     <Compile Include="DomainClasses\Documento.cs" />
     <Compile Include="DomainClasses\Mensajero.cs" />
+    <Compile Include="DomainClasses\Movimiento.cs" />
     <Compile Include="DomainClasses\TipoDepartamento.cs" />
     <Compile Include="DomainClasses\TipoMovimiento.cs" />
     <Compile Include="DomainClasses\TipoUsuario.cs" />
@@ -147,6 +148,7 @@
     <Compile Include="MappingClasses\DepartamentoMap.cs" />
     <Compile Include="MappingClasses\DocumentoMap.cs" />
     <Compile Include="MappingClasses\MensajeroMap.cs" />
+    <Compile Include="MappingClasses\MovimientoMap.cs" />
     <Compile Include="MappingClasses\TipoDepartamentoMap.cs" />
     <Compile Include="MappingClasses\TipoMovimientoMap.cs" />
     <Compile Include="MappingClasses\TipoUsuarioMap.cs" />
