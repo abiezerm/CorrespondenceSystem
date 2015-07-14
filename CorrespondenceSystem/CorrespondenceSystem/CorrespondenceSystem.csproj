@@ -135,6 +135,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="DomainClasses\Departamento.cs" />
+    <Compile Include="DomainClasses\Documento.cs" />
     <Compile Include="DomainClasses\Mensajero.cs" />
     <Compile Include="DomainClasses\TipoDepartamento.cs" />
     <Compile Include="DomainClasses\TipoMovimiento.cs" />
@@ -144,6 +145,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="MappingClasses\DepartamentoMap.cs" />
+    <Compile Include="MappingClasses\DocumentoMap.cs" />
     <Compile Include="MappingClasses\MensajeroMap.cs" />
     <Compile Include="MappingClasses\TipoDepartamentoMap.cs" />
     <Compile Include="MappingClasses\TipoMovimientoMap.cs" />
