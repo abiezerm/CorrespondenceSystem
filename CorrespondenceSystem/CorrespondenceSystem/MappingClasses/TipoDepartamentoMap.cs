@@ -8,7 +8,7 @@ namespace CorrespondenceSystem.MappingClasses
         public TipoDepartamentoMap()
         {
             Id(a => a.idTipoDepartamento);
-            Map(a => a.descripcion);
+            Map(a => a.descripcion).Not.Nullable();
         }
     }
 }

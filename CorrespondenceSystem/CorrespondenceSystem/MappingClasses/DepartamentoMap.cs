@@ -8,8 +8,8 @@ namespace CorrespondenceSystem.MappingClasses
         public DepartamentoMap()
         {
             Id(a => a.idDepartamento);
-            Map(a => a.descripcion);
-            References(a => a.tipoDepartamento).Column("idTipoDepartamento");
+            Map(a => a.descripcion).Not.Nullable();
+            References(a => a.tipoDepartamento).Column("idTipoDepartamento").Not.Nullable();
         }
     }
 }

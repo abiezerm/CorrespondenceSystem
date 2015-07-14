@@ -8,7 +8,7 @@ namespace CorrespondenceSystem.MappingClasses
         public MensajeroMap()
         {
             Id(a => a.idMensajero);
-            Map(a => a.descripcion);
+            Map(a => a.descripcion).Not.Nullable();
         }
     }
 }
