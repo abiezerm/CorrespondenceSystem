@@ -41,22 +41,12 @@ namespace MvcGCP.NHibernateHelpers
             .Database(MsSqlConfiguration.MsSql2008
                 .ConnectionString(_connectionString)
                 .ShowSql())
+            .ExposeConfiguration(c => new SchemaUpdate(c).Execute(false,true))
             .Mappings(m => m.FluentMappings.AddFromAssembly(Assembly.GetExecutingAssembly()))
             .BuildConfiguration();
 
-             var exporter = new SchemaExport(configuration);
-            exporter.Drop(false,false);
-            exporter.Execute(false,true,false);
             _sessionFactory = configuration.BuildSessionFactory();
             return _sessionFactory;
         }
-
-       // protected virtual void configuracion(Configuration conf)
-       // {
-       //     var exporter = new SchemaExport(conf);
-       //     exporter.Drop(false, true);
-       //     var update = new SchemaUpdate(conf);
-       //     update.Execute(false, true);
-       // }
     }
 }
